@@ -9,4 +9,6 @@ class Seleccion
 public:
     Sprite respuestas;
     Texture textura;
+    //bool seleccionado(Vector2f posicionMouse);
+    void menu();
 };

@@ -15,5 +15,6 @@ class Imagen{
         Imagen(string direccionImagen, string nombre);
         void drawTo(RenderWindow &window);
 
+        
     
 };

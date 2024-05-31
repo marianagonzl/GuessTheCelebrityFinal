@@ -1,5 +1,6 @@
 #include "imagen.hpp"
 #include <cstdlib>
+
 Imagen::Imagen(string direccionImagen,string nombre){
     if(!texture.loadFromFile(direccionImagen)){
         cout<<"error"<<endl;

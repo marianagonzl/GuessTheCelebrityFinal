@@ -15,17 +15,17 @@ int main()
     Menu lol(100, 100, "Taylor Swift", "Sabrina Carpenter", "Jennifer Lawrence");
     Menu lol1(100, 100, "Caitlyn Jenner", "Meryl Streep", "Julie Walters");
     Menu lol2(100, 100, "Olivia Rodrigo", "Jenna Ortega", "Jojo Siwa");
-    Menu lol3(100, 100, "Beyonce", "", "Rihanna");
-    Menu lol4(100, 100, " ", "Sebastian Stan", "");
-    Menu lol5(100, 100, "Taylor Swift", "Selena Gomez", "Jennifer");
-    Menu lol6(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol7(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol8(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol9(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol10(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol11(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol12(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
-    Menu lol13(100, 100, "Taylor Swift", "Sabrina", "Jennifer");
+    Menu lol3(100, 100, "Beyonce", "Jennifer Lope", "Rihanna");
+    Menu lol4(100, 100, "Chris Evans", "Sebastian Stan", "Chris Hemsworth");
+    Menu lol5(100, 100, "Karen Polinesia", "Selena Gomez", "Rosalia");
+    Menu lol6(100, 100, "Tom Hiddleston", "Harry Styles", "Ryan Gosling");
+    Menu lol7(100, 100, "Jacob Tremblay", "Walker Scobell", "Jaden Walton");
+    Menu lol8(100, 100, "David Schwimmer", "Pete Davidson", "Adam Sandler");
+    Menu lol9(100, 100, "Tom Hardy", "Rami Malek", "Cillian Murphy");
+    Menu lol10(100, 100, "Emma Watson", "Eiza Gonzalez", "Elizabeth Olsen");
+    Menu lol11(100, 100, "Ben Affleck", "Henry Cavill", "Christian Bale");
+    Menu lol12(100, 100, "Kanye West", "Travis Scott", "Kendrick Lamar");
+    Menu lol13(100, 100, "Brad Pitt", "Johnny Depp", "Leonardo DiCaprio");
 
     Imagen taylor("imagenes/Taylor.jpg", "Taylor");
     Imagen meryl("imagenes/Meryl.jpg", "Meryl");
@@ -80,7 +80,7 @@ int main()
                     break;
 
                 case Keyboard::Return:
-                    switch (lol.SeleccionarRespuesta())
+                    switch (lol.SeleccionarRespuesta()) // Taylor
                     {
                     case 0:
                         cout << "Correcto tilin eres un super papu kawaii" << endl;
@@ -92,6 +92,214 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol1.SeleccionarRespuesta()) // Meryl
+                    {
+                    case 0:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 1:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol2.SeleccionarRespuesta()) // Olivia
+                    {
+                    case 0:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol3.SeleccionarRespuesta()) // Rihanna
+                    {
+                    case 0:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol4.SeleccionarRespuesta()) // Sebastian
+                    {
+                    case 0:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 1:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol5.SeleccionarRespuesta()) // Selena
+                    {
+                    case 0:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 1:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol6.SeleccionarRespuesta()) // Tom H
+                    {
+                    case 0:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol7.SeleccionarRespuesta()) // Walker
+                    {
+                    case 0:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 1:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol8.SeleccionarRespuesta()) // Adam
+                    {
+                    case 0:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol9.SeleccionarRespuesta()) // Cillian
+                    {
+                    case 0:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol10.SeleccionarRespuesta()) // Emma W
+                    {
+                    case 0:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol11.SeleccionarRespuesta()) // Henry C
+                    {
+                    case 0:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 1:
+                        cout << "Correcto tilin eres un super papu kawaiiL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol12.SeleccionarRespuesta()) // Kanye
+                    {
+                    case 0:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+                    }
+                    break;
+
+                    switch (lol13.SeleccionarRespuesta()) // leo
+                    {
+                    case 0:
+                        cout << "Eres un looser te equivocaste" << endl;
+                        break;
+
+                    case 1:
+                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        break;
+
+                    case 2:
+                        cout << "Correcto tilin eres un super papu kawaii" << endl;
                         break;
                     }
                     break;
@@ -108,19 +316,19 @@ int main()
        int random = rand() % 15;
         */
         imagenes[0].drawTo(window);
-       /* imagenes[1].drawTo(window);
-        imagenes[2].drawTo(window);
-        imagenes[3].drawTo(window);
-        imagenes[4].drawTo(window);
-        imagenes[5].drawTo(window);
-        imagenes[6].drawTo(window);
-        imagenes[7].drawTo(window);
-        imagenes[8].drawTo(window);
-        imagenes[9].drawTo(window);
-        imagenes[10].drawTo(window);
-        imagenes[11].drawTo(window);
-        imagenes[12].drawTo(window);
-        imagenes[13].drawTo(window);*/
+        /* imagenes[1].drawTo(window);
+         imagenes[2].drawTo(window);
+         imagenes[3].drawTo(window);
+         imagenes[4].drawTo(window);
+         imagenes[5].drawTo(window);
+         imagenes[6].drawTo(window);
+         imagenes[7].drawTo(window);
+         imagenes[8].drawTo(window);
+         imagenes[9].drawTo(window);
+         imagenes[10].drawTo(window);
+         imagenes[11].drawTo(window);
+         imagenes[12].drawTo(window);
+         imagenes[13].drawTo(window);*/
 
         imagenes[0].sprite.setPosition(25, 100);
 

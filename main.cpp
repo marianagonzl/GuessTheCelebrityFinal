@@ -9,13 +9,13 @@ using namespace std;
 
 int main()
 {
-    RenderWindow window(VideoMode(800, 800), "Ohaio onichan!");
+    RenderWindow window(VideoMode(800, 710), "Ohaio onichan!");
     window.setFramerateLimit(60);
 
     Menu lol(100, 100, "Taylor Swift", "Sabrina Carpenter", "Jennifer Lawrence");
     Menu lol1(100, 100, "Caitlyn Jenner", "Meryl Streep", "Julie Walters");
     Menu lol2(100, 100, "Olivia Rodrigo", "Jenna Ortega", "Jojo Siwa");
-    Menu lol3(100, 100, "Beyonce", "Jennifer Lope", "Rihanna");
+    Menu lol3(100, 100, "Beyonce", "Jennifer Lopez", "Rihanna");
     Menu lol4(100, 100, "Chris Evans", "Sebastian Stan", "Chris Hemsworth");
     Menu lol5(100, 100, "Karen Polinesia", "Selena Gomez", "Rosalia");
     Menu lol6(100, 100, "Tom Hiddleston", "Harry Styles", "Ryan Gosling");
@@ -73,10 +73,36 @@ int main()
                 {
                 case Keyboard::Up:
                     lol.MoveUp();
+                    lol1.MoveUp();
+                    lol2.MoveUp();
+                    lol3.MoveUp();
+                    lol4.MoveUp();
+                    lol5.MoveUp();
+                    lol6.MoveUp();
+                    lol7.MoveUp();
+                    lol8.MoveUp();
+                    lol9.MoveUp();
+                    lol10.MoveUp();
+                    lol11.MoveUp();
+                    lol12.MoveUp();
+                    lol13.MoveUp();
                     break;
 
                 case Keyboard::Down:
                     lol.Movedown();
+                    lol1.Movedown();
+                    lol2.Movedown();
+                    lol3.Movedown();
+                    lol4.Movedown();
+                    lol5.Movedown();
+                    lol6.Movedown();
+                    lol7.Movedown();
+                    lol8.Movedown();
+                    lol9.Movedown();
+                    lol10.Movedown();
+                    lol11.Movedown();
+                    lol12.Movedown();
+                    lol13.Movedown();
                     break;
 
                 case Keyboard::Return:
@@ -304,6 +330,7 @@ int main()
                     }
                     break;
                 }
+
                 break;
             case Event::Closed:
                 window.close();
@@ -311,24 +338,24 @@ int main()
                 break;
             }
         }
-        /*
-       srand(time(NULL));
-       int random = rand() % 15;
-        */
+        
+      /* srand(time(NULL));
+       int random = rand() % 15;*/
+        
         imagenes[0].drawTo(window);
-        /* imagenes[1].drawTo(window);
-         imagenes[2].drawTo(window);
-         imagenes[3].drawTo(window);
-         imagenes[4].drawTo(window);
-         imagenes[5].drawTo(window);
-         imagenes[6].drawTo(window);
-         imagenes[7].drawTo(window);
-         imagenes[8].drawTo(window);
-         imagenes[9].drawTo(window);
-         imagenes[10].drawTo(window);
-         imagenes[11].drawTo(window);
-         imagenes[12].drawTo(window);
-         imagenes[13].drawTo(window);*/
+        /*imagenes[1].drawTo(window);
+        imagenes[2].drawTo(window);
+        imagenes[3].drawTo(window);
+        imagenes[4].drawTo(window);
+        imagenes[5].drawTo(window);
+        imagenes[6].drawTo(window);
+        imagenes[7].drawTo(window);
+        imagenes[8].drawTo(window);
+        imagenes[9].drawTo(window);
+        imagenes[10].drawTo(window);
+        imagenes[11].drawTo(window);
+        imagenes[12].drawTo(window);
+        imagenes[13].drawTo(window);*/
 
         imagenes[0].sprite.setPosition(25, 100);
 

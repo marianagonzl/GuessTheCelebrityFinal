@@ -679,10 +679,10 @@ cout<<"        \\/            \\/     \\/     \\/                  \\/     \\/  
         }
 
         //int random = rand() % 15;
-        imagenes[4].drawTo(window);
-        imagenes[4].sprite.setPosition(25, 100);
+        imagenes[0].drawTo(window);
+        imagenes[0].sprite.setPosition(25, 100);
 
-        lol4.draw(window);
+        lol.draw(window);
         window.display();
         window.clear();
     }

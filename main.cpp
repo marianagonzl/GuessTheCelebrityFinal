@@ -20,7 +20,7 @@ int main()
     cout << "        \\/            \\/     \\/     \\/                  \\/     \\/          \\/     \\/          \\/    \\/                \\/          " << endl;
 
     cout << "Bienvenide a el juego 'GUESS THE CELEBRITY'" << endl;
-    cout << "Este juego se basa en adivinar la celebridad a partir de una parte de una foto" << endl;
+    cout << "Este juego se basa en adivinar la celebridad a partir de una parte de una foto" << endl << endl;
 
     RenderWindow window(VideoMode(800, 710), "Ohaio onichan!");
     window.setFramerateLimit(60);

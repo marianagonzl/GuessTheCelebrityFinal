@@ -7,10 +7,38 @@
 using namespace sf;
 using namespace std;
 
+int oportunidades = 2;
+
 int main()
 {
+
+cout<<"  ________                              ___________.__             _________        .__        ___.         .__  __               " << endl;
+cout<<" /  _____/ __ __   ____   ______ ______ \\__    ___/|  |__   ____   \\_   ___ \\  ____ |  |   ____\\_ |_________|__|/  |_ ___.__.     " << endl;
+cout<<"/   \\  ___|  |  \\_/ __ \\ /  ___//  ___/   |    |   |  |  \\_/ __ \\  /    \\  \\/_/ __ \\|  | _/ __ \\| __ \\_  __ \\  \\   __<   |  |     " << endl;
+cout<<"\\    \\_\\  \\  |  /\\  ___/ \\___ \\ \\___ \\    |    |   |   Y  \\  ___/  \\     \\___\\  ___/|  |_\\  ___/| \\_\\ \\  | \\/  ||  |  \\___  |     " << endl;
+cout<<" \\______  /____/  \\___  >____  >____  >   |____|   |___|  /\\___  >  \\______  /\\___  >____/\\___  >___  /__|  |__||__|  / ____|     " << endl;
+cout<<"        \\/            \\/     \\/     \\/                  \\/     \\/          \\/     \\/          \\/    \\/                \\/          " << endl;
+
     RenderWindow window(VideoMode(800, 710), "Ohaio onichan!");
     window.setFramerateLimit(60);
+    /*
+         Texture portadaTexture;
+
+        portadaTexture.loadFromFile("imagenes/portada.jpg"))
+        {
+            cout << "Error al cargar imagen" << endl;
+        }
+
+        portadaTexture.setRepeated(true);
+
+        Sprite portada;
+        portada.setTexture(portadaTexture);
+        portada.setTextureRect(IntRect(255,255,255));
+
+          window.clear(Color(51,51,51));
+            window.draw(portada);
+            window.display();
+            window.clear();*/
 
     Menu lol(100, 100, "Taylor Swift", "Sabrina Carpenter", "Jennifer Lawrence");
     Menu lol1(100, 100, "Caitlyn Jenner", "Meryl Streep", "Julie Walters");
@@ -68,41 +96,69 @@ int main()
                 window.close();*/
             switch (event.type)
             {
+
             case Event::KeyReleased:
                 switch (event.key.code)
                 {
                 case Keyboard::Up:
-                    lol.MoveUp();
-                    lol1.MoveUp();
-                    lol2.MoveUp();
-                    lol3.MoveUp();
-                    lol4.MoveUp();
-                    lol5.MoveUp();
-                    lol6.MoveUp();
-                    lol7.MoveUp();
-                    lol8.MoveUp();
-                    lol9.MoveUp();
-                    lol10.MoveUp();
-                    lol11.MoveUp();
-                    lol12.MoveUp();
-                    lol13.MoveUp();
+                lol.MoveUp();
+                   // if (flechas == 1)
+                        lol1.MoveUp();
+                   // if (flechas == 2)
+                        lol2.MoveUp();
+                 //   if (flechas == 3)
+                        lol3.MoveUp();
+                  //  if (flechas == 4)
+                        lol4.MoveUp();
+                 //   if (flechas == 5)
+                        lol5.MoveUp();
+                 //   if (flechas == 6)
+                        lol6.MoveUp();
+                 //   if (flechas == 7)
+                        lol7.MoveUp();
+                //    if (flechas == 8)
+                        lol8.MoveUp();
+                //    if (flechas == 9)
+                        lol9.MoveUp();
+               //     if (flechas == 10)
+                        lol10.MoveUp();
+             //       if (flechas == 11)
+                        lol11.MoveUp();
+                //    if (flechas == 12)
+                        lol12.MoveUp();
+               //     if (flechas == 13)
+                        lol13.MoveUp();
                     break;
 
                 case Keyboard::Down:
-                    lol.Movedown();
-                    lol1.Movedown();
-                    lol2.Movedown();
-                    lol3.Movedown();
-                    lol4.Movedown();
-                    lol5.Movedown();
-                    lol6.Movedown();
-                    lol7.Movedown();
-                    lol8.Movedown();
-                    lol9.Movedown();
-                    lol10.Movedown();
-                    lol11.Movedown();
-                    lol12.Movedown();
-                    lol13.Movedown();
+                lol.Movedown();
+                    //if (flechas == 1)
+                        lol1.Movedown();
+                    //if (flechas == 2)
+                        lol2.Movedown();
+                    //if (flechas == 3)
+                        lol3.Movedown();
+                   // if (flechas == 4)
+                        lol4.Movedown();
+                   // if (flechas == 5)
+                        lol5.Movedown();
+                   // if (flechas == 6)
+                        lol6.Movedown();
+                   // if (flechas == 7)
+                        lol7.Movedown();
+                    //if (flechas == 8)
+                        lol8.Movedown();
+                  //  if (flechas == 9)
+                        lol9.Movedown();
+                   // if (flechas == 10)
+                        lol10.Movedown();
+                   // if (flechas == 11)
+                        lol11.Movedown();
+                  //  if (flechas == 12)
+                        lol12.Movedown();
+                  //  if (flechas == 13)
+                        lol13.Movedown();
+
                     break;
 
                 case Keyboard::Return:
@@ -110,14 +166,36 @@ int main()
                     {
                     case 0:
                         cout << "Correcto tilin eres un super papu kawaii" << endl;
+
                         break;
 
                     case 1:
-                        cout << "NOOOOOO MAAAALLLLL" << endl;
+                        cout << "NOOOOOO MAAAALLLLL" << endl;                
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
+                       
                         break;
                     }
                     break;
@@ -126,6 +204,16 @@ int main()
                     {
                     case 0:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
@@ -134,6 +222,16 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -146,10 +244,30 @@ int main()
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -158,10 +276,30 @@ int main()
                     {
                     case 0:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
@@ -174,6 +312,16 @@ int main()
                     {
                     case 0:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
@@ -182,6 +330,16 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -190,6 +348,16 @@ int main()
                     {
                     case 0:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
@@ -198,6 +366,16 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -210,10 +388,30 @@ int main()
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -222,6 +420,16 @@ int main()
                     {
                     case 0:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
@@ -230,6 +438,16 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -238,10 +456,30 @@ int main()
                     {
                     case 0:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
@@ -254,10 +492,30 @@ int main()
                     {
                     case 0:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
@@ -274,10 +532,30 @@ int main()
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -286,6 +564,16 @@ int main()
                     {
                     case 0:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
@@ -294,6 +582,16 @@ int main()
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -306,10 +604,30 @@ int main()
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
                     }
                     break;
@@ -318,10 +636,30 @@ int main()
                     {
                     case 0:
                         cout << "Eres un looser te equivocaste" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades; 
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 1:
                         cout << "NOOOOOO MAAAALLLLL" << endl;
+                        oportunidades--;
+                        if(oportunidades<=0)
+                        {
+                            window.close();
+                            cout << "Perdiste onichan. Te quedaste sin oportunidades" << endl;
+
+                        }else{
+                             cout << oportunidades;
+                        cout << "Tienes: "<< oportunidades << " oportunidad" << endl;
+                        }
                         break;
 
                     case 2:
@@ -337,32 +675,30 @@ int main()
 
                 break;
             }
+            // window.clear();
         }
-        
-      /* srand(time(NULL));
-       int random = rand() % 15;*/
-        
-        imagenes[0].drawTo(window);
-        /*imagenes[1].drawTo(window);
-        imagenes[2].drawTo(window);
-        imagenes[3].drawTo(window);
+
+        //int random = rand() % 15;
         imagenes[4].drawTo(window);
-        imagenes[5].drawTo(window);
-        imagenes[6].drawTo(window);
-        imagenes[7].drawTo(window);
-        imagenes[8].drawTo(window);
-        imagenes[9].drawTo(window);
-        imagenes[10].drawTo(window);
-        imagenes[11].drawTo(window);
-        imagenes[12].drawTo(window);
-        imagenes[13].drawTo(window);*/
+        imagenes[4].sprite.setPosition(25, 100);
 
-        imagenes[0].sprite.setPosition(25, 100);
-
-        lol.draw(window);
+        lol4.draw(window);
         window.display();
         window.clear();
     }
 
     return 0;
 }
+
+/*
+for (int i=0; i<imagenes.size(); i++){
+if(//si le atino){
+    i++
+}
+else{
+//mensaje de que no y se reducen oportunidades
+
+}
+}
+
+*/
